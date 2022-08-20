@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->tinyInteger('role')->default(1);
             $table->string('password');
             $table->string('social_id');
             $table->string('social_type');
